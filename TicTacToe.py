@@ -150,14 +150,14 @@ def button_click(button):
         button["text"] = "X"
         clicked = False
         moves += 1
-        check_tie()
         check_winner()
+        check_tie()
     elif button["text"] == " " and clicked == False:
         button["text"] = "O"
         clicked = True
         moves += 1
-        check_tie()
         check_winner()
+        check_tie()
     else:
         messagebox.showerror("Tic Tac Toe", "Box has already been selected!")
 
