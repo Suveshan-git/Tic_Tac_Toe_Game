@@ -3,6 +3,7 @@
 from tkinter import *
 from tkinter import messagebox
 
+# Setup the Tkinter window
 root = Tk()
 root.title("Tic-Tac-Toe Game")
 
@@ -11,6 +12,7 @@ moves = 0
 win = False
 
 
+# Function to check if nobody won and there are no more available moves
 def check_tie():
     if moves == 9:
         messagebox.showinfo("TIC TAC TOE", "It's a Tie!!!")
@@ -19,6 +21,7 @@ def check_tie():
         pass
 
 
+# Function to check if there is a winner
 def check_winner():
     global win
 
@@ -139,6 +142,7 @@ def check_winner():
         exit()
 
 
+# function to check if a space has been selected or selected twice
 def button_click(button):
     global clicked, moves
 
@@ -183,4 +187,4 @@ b7.grid(row=2, column=0)
 b8.grid(row=2, column=1)
 b9.grid(row=2, column=2)
 
-root.mainloop()
+root.mainloop()  # Keeps the window open until the application has been closed.
