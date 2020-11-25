@@ -187,4 +187,4 @@ b7.grid(row=2, column=0)
 b8.grid(row=2, column=1)
 b9.grid(row=2, column=2)
 
-root.mainloop()  # Keeps the window open until the application has been closed.
+root.mainloop()  # Keeps the window open until the application has been closed/game has ended.
